@@ -10,10 +10,13 @@ const app = express();
 const server = https.createServer(app);
 // const server = http.createServer(app);
 const io = socketio(server);
-io.set('transports', ['websocket']);
 
 //set static folder
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/', (req, res) => {
+    res.sendFile(__dirname, '/public/index.html')
+})
 
 const botName = '';
 
