@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>app</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper container">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i
+                    class="material-icons">menu</i></a>
+            <a href="/" class="brand-logo"></a>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li class="z-depth-2">
+            <a>
+                <i class="material-icons">question_answer</i>
+                <h4 id="room-name"></h4>
+            </a>
+        </li>
+        <li>
+            <a>
+                <h5>Users</h5>
+            </a>
+        </li>
+        <ul class="userList">
+            <li><a>ashish</a></li>
+        </ul>
+        <li><a id="leave-btn">Leave room</a></li>
+    </ul>
+    <div class="container">
+        <div class="chat-messages"></div>
+
+        <form action="" class="chat" id="chat-form">
+            <div class="input-field">
+                <input id="msg" required type="text" autocomplete="off" placeholder="Type...">
+            </div>
+            <button class="btn waves-effect waves-light sendbtn" type="submit" name="action"><i
+                    class="material-icons">send</i></button>
+        </form>
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.6/qs.min.js"
+    integrity="sha512-3TmPrquYLaAsUmZKXRARTDC5siWhLAdBVqNo4dWpDABBtLU62AaoTaQJEvjxjExcZYurO6i1dnK85k8pPIBlRg=="
+    crossorigin="anonymous"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>

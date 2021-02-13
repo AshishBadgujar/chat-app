@@ -1,0 +1,131 @@
+html{
+    background-color:#424242;
+    color: #ffff;
+    font-family: 'Caveat', cursive;;
+}
+nav{
+    background-color: #333;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.h3{
+    text-decoration: underline;
+}
+
+/* input */
+.input-field{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.096);
+    border-radius: 20px;
+    padding:0 15px;
+}
+input{
+    color: #ffff;
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+}
+input:focus {
+    color: #ffff;
+    border:none !important;
+    box-shadow: none !important;
+}
+
+/* button */
+.btn{
+    width: 30%;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: #333;
+    color: #f50057;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #f5005618;
+}
+ 
+/* for chat html  */
+.chat{
+    position:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:inherit;
+    top: 89%;
+}
+.sendbtn{
+    margin-top: 0;
+    height: 42px;
+    padding-top: 3px;
+    width: 60px;
+}
+.chat-messages {
+	max-height:81vh;
+	overflow-y: scroll;
+}
+
+.message{
+    display: block;
+    max-width: 75%;
+    margin-top: 5px;
+    padding: 9px;
+    border-radius: 20px;
+	overflow-wrap: break-word;
+}
+.left{
+    margin-right: 45%;
+    background-color: #00000012;
+}
+
+.right{
+    margin-left: 45%;
+	background-color:  #4b4b4b;
+}
+.center1{
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
+.meta {
+	font-size: 13px;
+	opacity: 0.7;
+    font-style: italic;
+}
+
+.meta span {
+	color: rgb(173, 173, 173);
+    margin-left: 0;
+}
+p,h4{
+    margin: 0;
+}
+a,i{
+    color: #ffff !important;
+}
+.z-depth-2{
+    padding-top: 10px;
+}
+.sidenav{
+    background-color: #333;
+}
+.userList{
+    margin-left: 20px;
+}
+#leave-btn{
+    color: #f50057 !important;
+    font-size:x-large !important;
+}
+
+
+
