@@ -13,8 +13,8 @@ const { username, room } = Qs.parse(location.search, {
     ignoreQueryPrefix: true,
 });
 
-// const socket = io('/', { transports: ['websocket'], upgrade: false });
-const socket = io('/');
+const socket = io('/', { transports: ['websocket'], upgrade: false });
+// const socket = io('/');
 
 // join room
 socket.emit('join-room', { username, room });
