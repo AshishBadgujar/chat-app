@@ -1,22 +1,22 @@
 const path = require('path');
-// const http = require('http');
-const https = require('https');
+const http = require('http');
+// const https = require('https');
 const express = require('express');
 const socketio = require('socket.io');
 const formateMessage = require('./utils/messages');
 const { userJoin, getCurrentUser, userLeave, getRoomUsers } = require('./utils/users')
 
 const app = express();
-const server = https.createServer(app);
-// const server = http.createServer(app);
+// const server = https.createServer(app);
+const server = http.createServer(app);
 const io = socketio(server);
 
 //set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res) => {
-    res.sendFile(__dirname, '/public/index.html')
-})
+// app.get('/', (req, res) => {
+//     res.sendFile(__dirname, '/public/index.html')
+// })
 
 const botName = '';
 
