@@ -57,7 +57,6 @@ input:focus {
     justify-content: center;
     align-items: center;
     width:inherit;
-    /* top: 89%; */
     bottom: 0;
 }
 .sendbtn{
@@ -67,7 +66,7 @@ input:focus {
     width: 60px;
 }
 .chat-messages {
-	max-height:81vh;
+	max-height:76vh;
 	overflow-y: scroll;
 }
 
