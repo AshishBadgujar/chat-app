@@ -83,12 +83,12 @@ input:focus {
 	overflow-wrap: break-word;
 }
 .left{
-    margin-right: 45%;
+    margin-right: 48%;
     background-color: #00000012;
 }
 
 .right{
-    margin-left: 45%;
+    margin-left: 48%;
 	background-color:  #4b4b4b;
 }
 .center1{
